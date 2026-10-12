@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>RimThunder - Breakthrough</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- 2S38_Tank_Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="2S38_Tank_Turret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- BMPT_Tank_Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="BMPT_Tank_Turret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- RT_BMP3_Tank_Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_BMP3_Tank_Turret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- RT_2A72_Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_2A72_Turret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- RT_NSVT_Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_NSVT_Turret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- T80BVM_Tank_Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="T80BVM_Tank_Turret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- RT_AtakaTurret: Chemfuel to Ammunition_Chemfuel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_AtakaTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Chemfuel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- RT_AG17DTurret: Chemfuel to Ammunition_Chemfuel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_AG17DTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Chemfuel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

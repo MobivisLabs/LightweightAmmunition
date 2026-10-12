@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Gravship Expanded - Chapter 2</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- Gravship Minigun Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VGE_GravshipMinigunTurret"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="VGE_GravshipMinigunTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+            <value>
+              <li>Ammunition_Steel</li>
+            </value>
+          </match>
+        </li>
+
+        <!-- Gravship Autocannon Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VGE_GravshipAutocannonTurret"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="VGE_GravshipAutocannonTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+            <value>
+              <li>Ammunition_Steel</li>
+            </value>
+          </match>
+        </li>
+
+        <!-- Gravship Uranium Slug Turret: Uranium to Ammunition_Uranium -->
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VGE_GravshipUraniumSlugTurret"]</xpath>
+          <match Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="VGE_GravshipUraniumSlugTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Uranium"]</xpath>
+            <value>
+              <li>Ammunition_Uranium</li>
+            </value>
+          </match>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

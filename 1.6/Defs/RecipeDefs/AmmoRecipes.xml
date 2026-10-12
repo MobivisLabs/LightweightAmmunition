@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ==================== STEEL AMMUNITION RECIPE ==================== -->
+
+  <RecipeDef>
+    <defName>Make_Steel_Ammunition</defName>
+    <label>make steel ammunition x25</label>
+    <description>Craft standardized steel ammunition from raw steel.</description>
+    <jobString>Manufacturing steel ammunition.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammunition_Steel>25</Ammunition_Steel>
+    </products>
+  </RecipeDef>
+
+  <!-- ==================== URANIUM AMMUNITION RECIPE ==================== -->
+
+  <RecipeDef>
+    <defName>Make_Uranium_Ammunition</defName>
+    <label>make uranium ammunition x25</label>
+    <description>Craft standardized uranium ammunition from raw uranium.</description>
+    <jobString>Manufacturing uranium ammunition.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Uranium</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammunition_Uranium>25</Ammunition_Uranium>
+    </products>
+  </RecipeDef>
+
+  <!-- ==================== PLASTEEL AMMUNITION RECIPE ==================== -->
+
+  <RecipeDef>
+    <defName>Make_Plasteel_Ammunition</defName>
+    <label>make plasteel ammunition x25</label>
+    <description>Craft standardized plasteel ammunition from raw plasteel.</description>
+    <jobString>Manufacturing plasteel ammunition.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammunition_Plasteel>25</Ammunition_Plasteel>
+    </products>
+  </RecipeDef>
+
+  <!-- ==================== CHEMFUEL AMMUNITION RECIPE ==================== -->
+
+  <RecipeDef>
+    <defName>Make_Chemfuel_Ammunition</defName>
+    <label>make chemfuel ammunition x25</label>
+    <description>Craft standardized chemfuel ammunition from raw chemfuel.</description>
+    <jobString>Manufacturing chemfuel ammunition.</jobString>
+    <workAmount>800</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <targetCountAdjustment>25</targetCountAdjustment>
+    <workSkill>Crafting</workSkill>
+    <recipeUsers>
+      <li>TableMachining</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Chemfuel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammunition_Chemfuel>25</Ammunition_Chemfuel>
+    </products>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModNotActive="imranfish.xmlextensions">1.6/DefaultPatches</li>
+    <!-- XML Extensions -->
+    <li IfModActive="imranfish.xmlextensions">1.6/XMLExtensions</li>
+
+    <!-- Core Turrets -->
+    <li IfModActive="imranfish.xmlextensions">1.6/Mods/CoreTurrets</li>
+
+    <!-- Mobivis Additions -->
+    <li IfModActiveAll="imranfish.xmlextensions,Mobivis.MobivisAdditions">1.6/Mods/MobivisAdditions</li>
+    <!-- Defensive Machine Gun Turret Pack -->
+    <li IfModActiveAll="imranfish.xmlextensions,sumghai.DefensiveMachineGunTurretPack">1.6/Mods/DGMT_Patches</li>
+    <!-- Impact Weaponry - Reloaded -->
+    <li IfModActiveAll="imranfish.xmlextensions,detvisor.impactweaponryreloaded">1.6/Mods/ImpactReloaded</li>
+    <!-- Rimsenal Security Pack -->
+    <li IfModActiveAll="imranfish.xmlextensions,rimsenal.security">1.6/Mods/RimsenalSecurityPack_Patches</li>
+    <!-- Rah's Vanilla Turrets Expansion -->
+    <li IfModActiveAll="imranfish.xmlextensions,Rah.RVTE">1.6/Mods/RVTE_Patches</li>
+
+    <!-- Vanilla Furniture Expanded - Security -->
+    <li IfModActiveAll="imranfish.xmlextensions,VanillaExpanded.VFESecurity">1.6/Mods/VFE_Security</li>
+    <!-- Vanilla Gravship Expanded Chapter 1 -->
+    <li IfModActiveAll="imranfish.xmlextensions,vanillaexpanded.gravship">1.6/Mods/VGE_Chapter1</li>
+    <!-- Vanilla Gravship Expanded Chapter 2 -->
+    <li IfModActiveAll="imranfish.xmlextensions,vanillaexpanded.gravship2">1.6/Mods/VGE_Chapter2</li>
+
+    <!-- RimThunder - Core -->
+    <li IfModActiveAll="imranfish.xmlextensions,RimThunder.Core">1.6/Mods/RT_Core</li>
+    <!-- RimThunder - Breakthrough -->
+    <li IfModActiveAll="imranfish.xmlextensions,RimThunderTeams.RimThunder.Breakthrough">1.6/Mods/RT_Breakthrough</li>
+    <!-- RimThunder - Time Forward -->
+    <li IfModActiveAll="imranfish.xmlextensions,RimThunderTeams.RimThunder.TimeForward">1.6/Mods/RT_TimeForward</li>
+    <!-- RimThunder - Zarya -->
+    <li IfModActiveAll="imranfish.xmlextensions,RimThunderTeams.RimThunder.Zarya">1.6/Mods/RT_Zarya</li>
+    <!-- RimThunder - Cold Front -->
+    <li IfModActiveAll="imranfish.xmlextensions,Aoba.RimThunder.RedArmy.ColdFront">1.6/Mods/RT_ColdFront</li>
+    <!-- RimThunder - Kon' -->
+    <li IfModActiveAll="imranfish.xmlextensions,RimThunderTeams.RimThunder.Kon">1.6/Mods/RT_Kon</li>
+
+    <!-- Vanilla Vehicles Expanded -->
+    <li IfModActiveAll="imranfish.xmlextensions,OskarPotocki.VanillaVehiclesExpanded">1.6/Mods/VVE_Main</li>
+    <!-- Vanilla Vehicles Expanded Tier 3 -->
+    <li IfModActiveAll="imranfish.xmlextensions,OskarPotocki.VanillaVehiclesExpandedTier3">1.6/Mods/VVE_Tier3</li>
+  </v1.6>
+</loadFolders>

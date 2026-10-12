@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableCoreTurrets</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <!-- Mini-turret: Steel to Ammunition_Steel -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Turret_MiniTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+        <value>
+          <li>Ammunition_Steel</li>
+        </value>
+      </Operation>
+
+      <!-- Autocannon turret: Steel to Ammunition_Steel -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Turret_Autocannon"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+        <value>
+          <li>Ammunition_Steel</li>
+        </value>
+      </Operation>
+
+      <!-- Sniper slug turret: Uranium to Ammunition_Uranium -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Turret_Sniper"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Uranium"]</xpath>
+        <value>
+          <li>Ammunition_Uranium</li>
+        </value>
+      </Operation>
+
+      <!-- Foam turret: Chemfuel to Ammunition_Chemfuel -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Turret_FoamTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+        <value>
+          <li>Ammunition_Chemfuel</li>
+        </value>
+      </Operation>
+
+      <!-- Rocketswarm launcher: Chemfuel to Ammunition_Chemfuel -->
+      <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Turret_RocketswarmLauncher"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+        <value>
+          <li>Ammunition_Chemfuel</li>
+        </value>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>

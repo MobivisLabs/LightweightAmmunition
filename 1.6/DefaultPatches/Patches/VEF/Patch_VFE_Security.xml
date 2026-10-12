@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Security</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- VFES_Turret_AntiAir: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_AntiAir"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_Concealed: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_Concealed"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_MilitaryTurret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_MilitaryTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_ArmoredTurret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_ArmoredTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_Flame: Chemfuel to Ammunition_Chemfuel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_Flame"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Chemfuel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_ShotgunTurret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_ShotgunTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_AutocannonDouble: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_AutocannonDouble"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Complex_Hmg: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Complex_Hmg"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Complex_Minigun: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Complex_Minigun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_Minigun: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_Minigun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Steel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_ChargeTurret: Plasteel to Ammunition_Plasteel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_ChargeTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Plasteel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Turret_ChargeRailgun: Plasteel to Ammunition_Plasteel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Turret_ChargeRailgun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Plasteel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+        <!-- VFES_Complex_Charge: Plasteel to Ammunition_Plasteel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VFES_Complex_Charge"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter</xpath>
+          <value>
+            <fuelFilter>
+              <thingDefs>
+                <li>Ammunition_Plasteel</li>
+              </thingDefs>
+            </fuelFilter>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

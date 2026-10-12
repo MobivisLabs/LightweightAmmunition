@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Gravship Expanded - Chapter 1</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- VGE Point Defense Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="VGE_PointDefenseTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

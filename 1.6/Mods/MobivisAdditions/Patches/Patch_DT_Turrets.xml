@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableDTTurrets</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Mobivis Additions</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+
+            <!-- Mounted DP-28 Turret -->
+            <li Class="PatchOperationConditional" MayRequire="Mobivis.MobivisAdditions">
+              <xpath>/Defs/ThingDef[defName="Turret_DP28MG"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_DP28MG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- DP-28 Complex -->
+            <li Class="PatchOperationConditional" MayRequire="Mobivis.MobivisAdditions">
+              <xpath>/Defs/ThingDef[defName="Turret_DP28MG_Complex"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_DP28MG_Complex"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Kord Complex -->
+            <li Class="PatchOperationConditional" MayRequire="Mobivis.MobivisAdditions">
+              <xpath>/Defs/ThingDef[defName="Turret_Kord_Complex"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_Kord_Complex"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>

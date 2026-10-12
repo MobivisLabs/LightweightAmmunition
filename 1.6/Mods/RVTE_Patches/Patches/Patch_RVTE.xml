@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableRVTE</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Rah's Vanilla Turrets Expansion</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+
+            <!-- MilitaryTurretGun base: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="MilitaryTurretGun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- MilitaryTurretGunManned: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="MilitaryTurretGunManned"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- ShredderTurretGun base: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="ShredderTurretGun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- ShredderTurretGunManned: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="ShredderTurretGunManned"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- PrecisionTurretGun base: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="PrecisionTurretGun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- PrecisionTurretGunManned: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="PrecisionTurretGunManned"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- VulcanCannon base: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="VulcanCannon"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- VulcanCannonManned: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="VulcanCannonManned"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+            <!-- GunComplex: Steel to Ammunition_Steel -->
+            <li MayRequire="Rah.RVTE" Class="PatchOperationReplace">
+              <xpath>/Defs/ThingDef[defName="GunComplex"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+              <value>
+                <li>Ammunition_Steel</li>
+              </value>
+            </li>
+
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+</Patch>

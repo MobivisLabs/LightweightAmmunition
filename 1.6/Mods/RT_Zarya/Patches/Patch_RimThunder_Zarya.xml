@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableRTZaryaTurrets</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>RimThunder - Zarya</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+
+            <!-- EpochAlmaty_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="EpochAlmaty_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_Baikal_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_Baikal_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_2S25_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_2S25_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_KPVT_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_KPVT_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- T90M_Tank_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="T90M_Tank_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_Apoch57_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_Apoch57_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+
+            <!-- RT_Min_Missile_Turret: Chemfuel to Ammunition_Chemfuel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_Min_Missile_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Chemfuel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_Kornet_Turret: Chemfuel to Ammunition_Chemfuel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.Zarya" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_Kornet_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Chemfuel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="AmmunitionBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>500</stackLimit>
+    <tickerType>Normal</tickerType>
+    <thingCategories>
+      <li>Ammunition</li>
+    </thingCategories>
+    <techLevel>Industrial</techLevel>
+    <researchPrerequisites>
+      <li>Machining</li>
+    </researchPrerequisites>
+    <tradeTags>
+        <li>Ammunition</li>
+    </tradeTags>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>14</pathCost>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Explosive">
+          <explosiveRadius>2.0</explosiveRadius>
+          <explosiveDamageType>Burn</explosiveDamageType>
+          <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+          <startWickHitPointsPercent>0.7</startWickHitPointsPercent>
+          <wickTicks>
+              <min>30</min>
+              <max>60</max>
+          </wickTicks>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- ==================== STEEL AMMUNITION ==================== -->
+
+  <ThingDef ParentName="AmmunitionBase">
+    <defName>Ammunition_Steel</defName>
+    <label>steel ammunition</label>
+    <description>A lightweight steel-based ammunition supply for automated weapons, turrets, and military vehicles.</description>
+    <graphicData>
+      <texPath>Things/Ammunition/Steel_Ammunition</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>0.1</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.8</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <!-- ==================== URANIUM AMMUNITION ==================== -->
+
+  <ThingDef ParentName="AmmunitionBase">
+    <defName>Ammunition_Uranium</defName>
+    <label>uranium ammunition</label>
+    <description>A lightweight uranium-based ammunition supply for automated weapons, turrets, and military vehicles.</description>
+    <graphicData>
+      <texPath>Things/Ammunition/Uranium_Ammunition</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>0.3</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <!-- ==================== PLASTEEL AMMUNITION ==================== -->
+
+  <ThingDef ParentName="AmmunitionBase">
+    <defName>Ammunition_Plasteel</defName>
+    <label>plasteel ammunition</label>
+    <description>A lightweight plasteel-based ammunition supply for automated weapons, turrets, and military vehicles.</description>
+    <graphicData>
+      <texPath>Things/Ammunition/Plasteel_Ammunition</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>0.8</MarketValue>
+      <Mass>0.02</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <!-- ==================== CHEMFUEL AMMUNITION ==================== -->
+
+  <ThingDef ParentName="AmmunitionBase">
+    <defName>Ammunition_Chemfuel</defName>
+    <label>chemfuel ammunition</label>
+    <description>A lightweight chemfuel-based ammunition supply for automated weapons, turrets, and military vehicles.</description>
+    <graphicData>
+      <texPath>Things/Ammunition/Chemfuel_Ammunition</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>0.5</MarketValue>
+      <Mass>0.025</Mass>
+      <Flammability>0.8</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableRTColdFrontTurrets</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>RimThunder - Cold Front</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+
+            <!-- RT_KV_1_Tank_Turret: Steel to Ammunition_Steel -->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_KV_1_Tank_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_KV_1_Coaxial_MGTurret: Steel to Ammunition_Steel -->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_KV_1_Coaxial_MGTurret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_T_27_Tankette_MGTurret: Steel to Ammunition_Steel -->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_T_27_Tankette_MGTurret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_T_38_Tank_MGTurret: Steel to Ammunition_Steel -->
+            <li Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_T_38_Tank_MGTurret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>

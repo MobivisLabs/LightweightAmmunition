@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <success>Normal</success>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/XmlExtensions.SettingsMenuDef[defName="LightweightAmmunitionSettings"]/settings/li[@Class="XmlExtensions.Setting.CollapsibleSettings"]/settings/li[tag="VFESecurityTag"]/settings</xpath>
+                <value>
+
+                    <!-- Checkbox for this tweak mod -->
+                    <li Class="XmlExtensions.Setting.Checkbox">
+                        <label>Vanilla Furniture Expanded - Security</label>
+                        <key>EnableVFESecurity</key>
+                        <defaultValue>true</defaultValue>
+                    </li>
+
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

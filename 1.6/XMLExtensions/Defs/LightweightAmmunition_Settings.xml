@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>LightweightAmmunitionSettings</defName>
+        <modId>Mobivis.LightweightAmmunition</modId>
+        <label>Lightweight Ammunition</label>
+        <settings>
+
+            <li Class="XmlExtensions.Setting.SetColor">
+                <color>(187,0,0)</color>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>For any changed settings to take effect the game must be restarted.</text>
+                <font>Medium</font>
+                <anchor>Middle</anchor>
+                <tKey>LWAWarning</tKey>
+            </li>
+            <li Class="XmlExtensions.Setting.SetColor" />
+            <li Class="XmlExtensions.Setting.GapLine" />
+
+            <li Class="XmlExtensions.Setting.Searchbox">
+                <highlightColor>(160,32,240)</highlightColor>
+            </li>
+
+            <!-- Turret Tweaks -->
+            <li Class="XmlExtensions.Setting.CollapsibleSettings">
+                <label>Turrets Ammo Change</label>
+                <headerFont>Medium</headerFont>
+                <defaultState>Open</defaultState>
+                <anchor>Middle</anchor>
+                <settings>
+
+                    <li Class="XmlExtensions.Setting.GapLine">
+                        <spacing>12</spacing>
+                    </li>
+
+                    <!-- RimWorld (Core) Turrets -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RimWorldCoreTurretsTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Defensive Machine Gun Turret Pack -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>DGMTurretsTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- DT Turrets -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>DTTurretsTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Impact Weaponry - Reloaded -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>ImpactReloadedTurretsTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Rimsenal Security Pack Turrets -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RimsenalSecurityPackTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Rah's Vanilla Turrets Expansion -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RVTETag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Vanilla Furniture Expanded - Security -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>VFESecurityTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Vanilla Gravship Expanded Chapter 1 -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>VGEChapter1Tag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Vanilla Gravship Expanded Chapter 2 -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>VGEChapter2Tag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                </settings>
+            </li>
+
+            <!-- Vehicle Tweaks -->
+            <li MayRequire="SmashPhil.VehicleFramework" Class="XmlExtensions.Setting.CollapsibleSettings">
+                <label>Vehicle Ammo Change</label>
+                <headerFont>Medium</headerFont>
+                <defaultState>Open</defaultState>
+                <anchor>Middle</anchor>
+                <settings>
+
+                    <li Class="XmlExtensions.Setting.GapLine">
+                        <spacing>12</spacing>
+                    </li>
+
+                    <!-- RimThunder - Core -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RTCoreTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- RimThunder - Breakthrough -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RTRBreakthroughTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- RimThunder - Time Forward -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RTTimeForwardTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- RimThunder - Zarya -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RTZaryaTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- RimThunder - Cold Front -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RTColdFrontTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- RimThunder - Kon' -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>RTKonTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Vanilla Vehicles Expanded -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>VVETurretsTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                    <!-- Vanilla Vehicles Expanded Tier 3 -->
+                    <li Class="XmlExtensions.Setting.Group">
+                        <tag>VVE3TurretsTag</tag>
+                        <settings>
+                        </settings>
+                    </li>
+
+                </settings>
+            </li>
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

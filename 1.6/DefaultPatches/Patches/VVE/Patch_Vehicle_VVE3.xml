@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Vehicles Expanded - Tier 3</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- Badger: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Badger_MainTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- Goliath Military Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Goliath_MilitaryTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- Marshal Main Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Marshal_MainTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- Marshal Mounted Turret: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Marshal_MountedTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Steel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- Burya: Chemfuel to Ammunition_Chemfuel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Burya_MainTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Chemfuel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- Goliath Swarm Turret: Chemfuel to Ammunition_Chemfuel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Goliath_SwarmTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Chemfuel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+        <!-- Paladin: Chemfuel to Ammunition_Chemfuel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/Vehicles.VehicleTurretDef[defName="Paladin_MainTurret"]/ammunition/thingDefs</xpath>
+          <value>
+            <thingDefs>
+              <li>Ammunition_Chemfuel</li>
+            </thingDefs>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Defensive Machine Gun Turret Pack</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <!-- DP-28 MG: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_DP28MG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- M2 HB: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_M2HB"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- M2 HB Tripod variant: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_M2HBT"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- M134 Minigun: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_M134MG"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- Mk 19 Grenade Launcher: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_Mk19MGL"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- M2 HB Sentry: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_M2HBs"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- M134 Minigun Sentry: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_M134MGs"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- M230 LF Sentry: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_M230LFs"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+        <!-- Mk 19 Grenade Launcher Sentry: Steel to Ammunition_Steel -->
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="Turret_Mk19MGLs"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+          <value>
+            <li>Ammunition_Steel</li>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

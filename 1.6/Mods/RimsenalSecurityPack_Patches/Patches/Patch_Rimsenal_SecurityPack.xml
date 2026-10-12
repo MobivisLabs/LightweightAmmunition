@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableRimsenal</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>Rimsenal - Security Pack</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+
+            <!-- Shard Sentry -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_ShardSentry"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_ShardSentry"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Plasteel"]</xpath>
+                <value>
+                  <li>Ammunition_Plasteel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Kinetic Sniper Turret -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_SuvTurret"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_SuvTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Plasteel"]</xpath>
+                <value>
+                  <li>Ammunition_Plasteel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Suppressor Turret -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_SupTurret"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_SupTurret"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Plasteel"]</xpath>
+                <value>
+                  <li>Ammunition_Plasteel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- ULM Cannon -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_MC"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_MC"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Uranium"]</xpath>
+                <value>
+                  <li>Ammunition_Uranium</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- EMP Lobber -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_EMPLobber"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_EMPLobber"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Rotary Gun Turret -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_Rotarygun"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_Rotarygun"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Slugger Turret -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_MiniSlugger"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_MiniSlugger"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Shooter Turret -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_MiniShooter"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_MiniShooter"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Steel"]</xpath>
+                <value>
+                  <li>Ammunition_Steel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Incendiary Lobber Turret -->
+            <li MayRequire="rimsenal.security" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_FireLobber"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_FireLobber"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+                <value>
+                  <li>Ammunition_Chemfuel</li>
+                </value>
+              </match>
+            </li>
+
+            <!-- Incinerator Turret (requires Anomaly) -->
+            <li MayRequire="rimsenal.security,Ludeon.RimWorld.Anomaly" Class="PatchOperationConditional">
+              <xpath>/Defs/ThingDef[defName="Turret_Incinerator" and MayRequire="Ludeon.RimWorld.Anomaly"]</xpath>
+              <match Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Turret_Incinerator"]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs/li[text()="Chemfuel"]</xpath>
+                <value>
+                  <li>Ammunition_Chemfuel</li>
+                </value>
+              </match>
+            </li>
+
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>

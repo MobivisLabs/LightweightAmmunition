@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableRTCoreTurrets</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>RimThunder - Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+
+          <operations>
+            <!-- RT_BaseVehicleMG_Light: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[@Name="RT_BaseVehicleMG_Light"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_BaseVehicleMG_Medium: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[@Name="RT_BaseVehicleMG_Medium"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_GrenadeLauncher: Chemfuel to Ammunition_Chemfuel -->
+            <li MayRequire="RimThunder.Core" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_GrenadeLauncher"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Chemfuel</li>
+                </thingDefs>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>

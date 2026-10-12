@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="XmlExtensions.OptionalPatch">
+    <modId>Mobivis.LightweightAmmunition</modId>
+    <key>EnableRTTimeForwardTurrets</key>
+    <defaultValue>true</defaultValue>
+    <caseTrue>
+      <Operation Class="PatchOperationFindMod">
+        <mods>
+          <li>RimThunder - Time Forward</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+          <operations>
+
+            <!-- T14_2A82_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="T14_2A82_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_HCBT_NG_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_HCBT_NG_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- T14_2A72_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="T14_2A72_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- T14_2A83_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="T14_2A83_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_HCBT_NG_Turret_B: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_HCBT_NG_Turret_B"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_T15_Baikal_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_T15_Baikal_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_T15_Apoch57_Turret: Steel to Ammunition_Steel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_T15_Apoch57_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Steel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_T15_Kornet_Turret: Chemfuel to Ammunition_Chemfuel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_T15_Kornet_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Chemfuel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+            <!-- RT_T15_Min_Missile_Turret: Chemfuel to Ammunition_Chemfuel -->
+            <li MayRequire="RimThunder.Core,RimThunderTeams.RimThunder.TimeForward" Class="PatchOperationReplace">
+              <xpath>/Defs/Vehicles.VehicleTurretDef[defName="RT_T15_Min_Missile_Turret"]/ammunition/thingDefs</xpath>
+              <value>
+                <thingDefs>
+                  <li>Ammunition_Chemfuel</li>
+                </thingDefs>
+              </value>
+            </li>
+
+          </operations>
+        </match>
+      </Operation>
+    </caseTrue>
+  </Operation>
+
+</Patch>
